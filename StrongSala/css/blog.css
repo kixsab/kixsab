@@ -1,0 +1,119 @@
+#paginaprincipal{height: fit-content;
+    padding-top: 90px;}
+.efectochulo{font-size: 150%;
+    -webkit-animation: efectochulo 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation:efectochulo 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            color:#ff2d2d;
+            margin-top: 15px;
+            text-align: center;
+            margin-bottom: 25px; 
+            text-shadow: 0 1px 1px rgba(0,0,0,0.4);}
+
+@-webkit-keyframes efectochulo {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes efectochulo{
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.subiendo{ float: right;}
+#subiendo{ z-index: 1;
+    position: -webkit-sticky; 
+    position: fixed; 
+    
+ padding: 2%;
+    text-decoration: none;
+    margin: 0 auto;
+   
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 6px #000;
+  color: #000;
+    }
+
+.noticia a{color: #ff2d2d;}
+.cuerpo img{ width: 20%;}
+#novedades{   align-items: center;
+  display: flex;
+  justify-content: center;
+background-color:#ff2d2d;
+
+ }
+#generalnoticias{align-items: center;
+  display: flex;
+  justify-content: center;
+background-color:#000000;
+color: #ffffff;}
+
+img{width: 40%;}
+.noticias{      align-items: center;
+  display: flex;
+  justify-content: center;
+
+ 
+}
+
+
+.noticia {
+  margin:  10px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+  
+}
+
+#generalnoticias{background-color: #ff2d2d;color: #000000;}
+.nombrenoticia {
+  color:#ffffff;
+  background:#868686;
+  padding: 1% ;
+  font-size: 15px;
+  text-transform: uppercase;
+  width:96%;
+}
+
+.noticia .fecha {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  width: 98%;
+ 
+}
+.noticia .cuerpo{ background-color: #ffffff;
+  font-size: 12px;
+  
+  padding: 1% ;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  width: 96%;
+  
+}
+
+

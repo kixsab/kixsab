@@ -1,0 +1,142 @@
+#paginaprincipal{height: fit-content;
+    padding-top: 90px;
+padding-bottom: 20px;
+}
+.efectochulo{font-size: 150%;
+    -webkit-animation: efectochulo 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation:efectochulo 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            color:#ff2d2d;
+            margin-top: 15px;
+            text-align: center;
+            margin-bottom: 25px; 
+            text-shadow: 0 1px 1px rgba(0,0,0,0.4);}
+
+.fotosgym{display: inline-block; width: 30%;}
+
+@-webkit-keyframes efectochulo {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes efectochulo{
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+
+
+}
+
+
+  div#imagen1 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;/*sólo para ejemplo*/
+    background-image: url(../img/bici.jpg);
+    display: inline-block;
+    
+  }
+  div#imagen2 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;/*sólo para ejemplo*/
+    background-image: url(../img/yoga.jpg);
+    display: inline-block;
+    
+  }
+  div#imagen3 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;/*sólo para ejemplo*/
+    background-image: url(../img/natacion.jpg);
+    display: inline-block;
+    
+  }
+  
+  div#info {
+    position:absolute;
+    overflow:hidden;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(160, 160, 160, 0.521);
+    opacity:0;
+    transition: opacity 0.3s;
+    font-weight: bolder;
+  }
+  
+  div.imagen:hover div#info {
+    opacity:1;
+  }
+  
+  p#headline {
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: -75px;
+    margin-top: 15px;
+    transition: margin-left 0.3s;
+    color: aliceblue;
+    font-weight: bolder;
+  }
+  
+  div.imagen:hover p#headline {
+    margin-left: 115px;
+  }
+  
+  p#descripcion {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 200px;
+    transition: margin-top 0.4s;
+  }
+  
+  div.imagen:hover p#descripcion {
+    margin-top: 75px;
+  }
+  
+#centrooo{text-align: center;}
+#centrotabla{padding: 6%;}
+#tabla{  font-size:15px;
+    border:2px solid rgb(0, 0, 0);
+    border-collapse:collapse;
+    width: 100%;
+   
+    
+}
+
+ .tabla td {   color:rgb(0, 0, 0);
+ vertical-align:middle;
+ border:2px solid rgb(0, 0, 0);
+ background-color: rgb(255, 255, 255);
+ padding: 1px;
+ 
+    }
+.tabla td:hover{background-color: #ff2d2d;}   
+.tabla th:hover{background-color: #000000; color: rgb(255, 255, 255);}  
+    
+
+/* #centrotabla{margin-left: 12%;} */
+.rojo{ height: 10%; 
+    background-color:
+     #ff2d2d; color: aliceblue; 
+     text-align: center;}
