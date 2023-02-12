@@ -1,0 +1,138 @@
+*{ padding: 0; margin: 0;}
+
+#paginaprincipal{height: fit-content;
+padding-top: 90px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+
+  ul {
+    list-style-type: none;
+  }
+  
+ 
+
+  .edito:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+  }
+ 
+  .grande {
+    width: 100%;
+    margin-left: 43px ;
+    margin-bottom: 20px;
+  }
+  
+  .tarifa {
+    margin:  10px;
+    text-align: center;
+    width: 230px;
+    float: left;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    padding-bottom: 10px;
+  }
+  
+  .tarifa:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+  
+  .nombretarifa {
+    color: #FFF;
+    background: #000000;
+    padding: 20px ;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .tarifa .precio {
+    background-image: url(../img/greything.jpg);background-attachment: fixed;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px ;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+
+  .lista li {
+    font-size: 15px;
+    padding: 12px 8px;
+  }
+  
+  .lista {
+    background: #F0F0F0;
+  }
+  
+  .precio {
+    background: #FFF;
+    padding: 15px;
+    font-weight:bolder;
+    
+  }
+
+ #nombreprueba{background-color: #ff2d2d;  color: #FFF;
+  
+  padding: 20px ;
+  font-size: 20px;
+  text-transform: uppercase;}
+
+  .efectochulo{font-size: 150%;
+    -webkit-animation: efectochulo 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation:efectochulo 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            color:#ff2d2d;
+            margin-top: 15px;
+            text-align: center;
+            margin-bottom: 25px; 
+            text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+
+@-webkit-keyframes efectochulo {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes efectochulo{
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.apuntarse{text-decoration: none; color: #000000;}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8"/>
+ <title>StrongSala apuntate</title>
+ <link rel="stylesheet" href="../css/strongsala.css"/>
+ <link rel="stylesheet" href="../css/apuntate.css"/>
+
+
+</head>
+
+<body>
+
+ <nav>  
+
+   
+  <div id="menu"> 
+
+    <div id="cajitamenu0"><a href="../index.html" > <img id="logomenu" src="../img/logo.png" alt="Logo StrongSala"/></a> </div>
+
+       <div class="cajitamenu" id="cajitamenu1"><a href="./tarifas.html" >Tarifas</a> </div>
+       <div class="cajitamenu" id="cajitamenu2"><a href="./actividadesyhorarios.html" >Actividades y horarios</a> </div>
+       <div class="cajitamenu" id="cajitamenu3"><a href="./maquinasysalas.html" >Máquinas y salas</a> </div>  
+       <div class="cajitamenu" id="cajitamenu4"><a href="./blog.html" >Blog de la comunidad</a> </div>
+       <div id="cajitamenu5"> <a href="./apuntate.html" >APÚNTATE!</a> </div>
+
+        
+   </div>   <!--- cierro menu-->
+
+                   
+    <div id="paginaprincipal">
+       
+        <p class="efectochulo">Apúntate </p>
+ <div class="centro">
+<h5>Antes de comenzar, ponte música para despejar tu mente </h5> </div>
+<br>
+
+<div class="centro">
+    <audio controls>
+    <source src="../audio/musica.mp3" type="audio/mp3">
+        Tu navegador no soporta audio HTML5.
+</audio>
+</div>
+<br>
+
+        <form name="Formulario" action="../html/ups.html" class="centro" >
+
+            <fieldset>
+              
+             <p>Elige tu tarifa, si no sabes cúal pulsa <a class="aqui" href="../html/tarifas.html"> aquí </a> </p>
+               <select name="combo" multiple required >
+                  
+                       <option value="1" label="Prueba"> </option>
+                       <option value="2"  label="Medio mes"> </option>
+                       <option value="3"selected label="Básico"> </option>
+                       <option value="4" label="Paquete familia"> </option>
+                      
+                   </select>
+                
+               <p>Nombre: 
+                <input class="nombre" type="text" name="nombre" maxlength="15" required placeholder="ej: Paula" /> </p>
+               
+              <p>Apellidos:
+                <input class="apellidos" type="text" name="apellidos" maxlength="60" required placeholder="ej: Ruiz Doral"/> </p> 
+                
+              <p>Correo electrónico: 
+               <input class="mail" type="email" name="Email"   placeholder="ej: paula@gmail.com"/> </p> 
+              
+              <p> Fecha de nacimiento:  <br>
+                <input class="dia" type="number" name="dia"  max="31" min="1" />
+              
+              de 
+             
+                <input class="mes" type="number" name="mes"  max="12" min="1" />
+                  de
+                  <input class="ano" type="number" name="anyo"   min="1900" max="2050" > <br> </p>
+      
+              
+           
+               <div id="content">
+              <div class="izquierda"> <span class="edad">Edad:</span>  <br>
+                <input type="radio" name="edad" value="0-20" > 0-16  <br>
+                <input type="radio" name="edad" value="radio" > 16-18 <br>
+                <input type="radio" name="edad" value="radio" > +18<br>
+               
+            </div>
+         
+       <p> Provincia <br>
+        <select name="combo">
+         
+          <option value="1" selected>- selecciona -</option>
+          <option value="2">Albacete</option> 
+          <option value="3">Toledo</option>
+          <option value="4">Guadalajara</option> 
+          <option value="5">Ciudad Real</option>
+          <option value="6">Cuenca</option>
+        </select> </p>
+         
+            
+            <p>
+              ¿Tienes alguna pregunta? <br>
+              <textarea class="escondo" name="texto" cols="40" rows="4" spellcheck="true" placeholder="Escribe aquí tus dudas o sugerencias..."></textarea>
+           </p>
+            
+             
+              <input class="enviar1" type="submit" value="Enviar" />
+              <input class="restaurar1" type="reset" value="Restaurar"/>
+              
+
+
+
+                </fieldset> 
+         </form>
+           
+
+    </div><!-- cierro el id paginaprincipal--> 
+
+<div id="pie">
+
+    <h2><a class="volverarriba" href="#paginaprincipal"> volver arriba </a>
+    </h2>
+   <h2 id="strongpie">StrongSala</h2>
+    <h3>
+        C/Alta nº2, Ayna (Albacete) 02125</h3>
+        <h3>   620978971</h3>
+        <h3>   strongsalaayna@gmail.com </h3> 
+ 
+
+</div> <!-- cierro id pie-->
+
+</div>
+
+</nav>
+
+</body>
+</html>
