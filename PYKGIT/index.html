@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pruebas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Datos del centro escolar</h1>
+        <div class="buttons">
+            <button onclick="fetchData('alumnos')">Sacar Info de Alumnos</button>
+            <button onclick="fetchData('profesores')">Sacar Info de Profesores</button>
+            <button onclick="fetchData('usuarios')">Sacar Info de Usuarios</button>
+        </div>
+        <div id="content"></div>
+        <div id="server-info" class="server-info"></div>
+    </div>
+    <script>
+        function fetchData(type) {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', `fetch_data.php?type=${type}`, true);
+            xhr.onload = function() {
+                if (this.status === 200) {
+                    document.getElementById('content').innerHTML = this.responseText;
+                    const serverIp = this.getResponseHeader('X-Server-IP');
+                    if (serverIp) {
+                        document.getElementById('server-info').innerText = 'Conectado al servidor: ' + serverIp;
+                    }
+                } else {
+                    document.getElementById('content').innerHTML = 'Error al recuperar los datos.';
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
